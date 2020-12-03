@@ -5,7 +5,7 @@ const ButtonClicker = (props: { buttonMessage: string }): JSX.Element => {
 
   return (
     <>
-      <button onClick={() => setCount(count => count + 1)}>{props.buttonMessage}</button>
+      <button onClick={() => setCount(c => c + 1)}>{props.buttonMessage}</button>
       <span>{count}</span>
     </>
   )
