@@ -1,30 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app), but converted to TypeScript.
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
-npm run dev
-# or
+yarn install
 yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Additionally there is a proof of concept page available at [/experiment](http://localhost:3000/experiment) which makes use of some React hooks and toy components.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Other commands
 
-## Learn More
+To build:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+yarn build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To lint (provided by `eslint` and various plugins):
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```bash
+yarn lint
+```
 
-## Deploy on Vercel
+To run the unit tests (provided by `jest` and `test-library/react`):
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+yarn test
+# or with coverage
+yarn test --coverage
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+To autoformat source files:
+
+```bash
+yarn prettier
+```
+
+Additionally we recommend configuring `Prettier` to integrate with your IDE so it runs automatically as you work. [See more about that here](https://prettier.io/docs/en/editors.html)
