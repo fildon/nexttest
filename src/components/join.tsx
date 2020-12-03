@@ -1,3 +1,5 @@
+import React from 'react'
+
 /**
  * Join an array of children with the provided separator
  */
