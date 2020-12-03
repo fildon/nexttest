@@ -1,15 +1,21 @@
-import { useState } from 'react'
+import ButtonClicker from '../components/buttonClicker'
+import Join from '../components/join'
 
-const Experiment = () => {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <span>foo</span>
-      <button onClick={() => setCount(count => count + 1)}>click me!</button>
-      <span>{count}</span>
-    </>
-  )
-}
+const Experiment = (): JSX.Element => (
+  <>
+    <span>Welcome to my page. Here is a button you can click.</span>
+    <ButtonClicker buttonMessage='click me!'>
+      <span>I am the child</span>
+      <span>I am the other child</span>
+    </ButtonClicker>
+    <div>
+      <Join separator={<div>I am the separator</div>}>
+        <span>foo</span>
+        <span>bar</span>
+        <span>buzz</span>
+      </Join>
+    </div>
+  </>
+)
 
 export default Experiment
