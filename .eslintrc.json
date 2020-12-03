@@ -17,13 +17,7 @@
       "jsx": true
     }
   },
-  "plugins": [
-    "@typescript-eslint",
-    "jest",
-    "react",
-    "react-hooks",
-    "jsx-a11y"
-  ],
+  "plugins": ["@typescript-eslint", "jest", "react", "react-hooks", "jsx-a11y"],
   "rules": {
     "react/react-in-jsx-scope": "off"
   },
